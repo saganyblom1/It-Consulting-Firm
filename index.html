@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Här är två saker som kan
+  vara bra att veta innan du börjar.
+  
+  1. Vi använder en klass som heter container på alla sektioner på
+  den här sidan. Den styr själva grundstrukturen, t.ex. hur bred varje
+  sektion är, hur texten ska vara formatterad m.m. Helt enkelt styling
+  som ska gälla för alla sektioner.
+  
+  2. Vi använder en bakgrundsbild till toppen av sidan. Det är ett vanlig
+  metod för att få text ovanpå en bild. Det som är lite annorlunda med denna
+  metod är att bilden läggs in i CSS-filen och inte i HTML-filen, precis som
+  om du hade gjort en bakgrundsfärg. Ta en titt i CSS-filen efter
+  background-image så ser du hur det är kopplat!
+
+      Lycka till! -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+
+  <!--En font som vi denna gång hämtar från google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet" />
+  <title>IT Consulting Firm</title>
+</head>
+
+<body>
+  <!-- Logo at the top -->
+  <div class="logo-container">
+    <img
+      src="C:\Users\sagaa\Documents\Kodning\Tjejer Kodar\Test\2-one-pager-web-sv\images\9a093a99-4072-460b-8595-e276f11ea5c1.webp"
+      alt="Company Logo" class="logo">
+  </div>
+
+  <!-- Här finns all HTML-kod som har med toppen på sidan att göra. Kom
+      ihåg att du hittar bilden i CSS-filen -->
+  <header>
+    <div class="container">
+      <h1>
+        Empowering engineers Enabling innovation
+      </h1>
+      <a href="https://www.themembercompany.com/become-a-client">Become our partner</a>
+    </div>
+  </header>
+
+  <!-- Här finns all HTML-kod som har med de tre ikonerna att göra -->
+  <section class="what-we-do">
+    <div class="container">
+      <h2>Some of the great things we do</h2>
+
+      <div class="icons">
+        <div class="icon">
+          <img src="./images/DigI.png" />
+          <h3>Digital transformation</h3>
+          <p>Drives digital transformation with expert developers, project managers, and Scrum Masters who bring
+            innovative solutions to life. We streamline processes and elevate businesses through cutting-edge
+            technology.</p>
+        </div>
+
+        <div class="icon">
+          <img src="./images/ProD.png" />
+          <h3>Product & Development</h3>
+          <p>Focuses on shaping the future of products with a team of skilled Product Owners and developers. We turn
+            ideas into reality by crafting high-quality, market-ready solutions that meet evolving customer needs.</p>
+        </div>
+
+        <div class="icon">
+          <img src="./images/OpEx.png" />
+          <h3>Operations & Logistics</h3>
+          <p>Optimizes logistics and operations to boost efficiency across the board. We work closely with clients to
+            deliver sustainable improvements in performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Här finns all HTML-kod som har med "about us"-sektionen att göra -->
+  <section class="about-us">
+    <div class="container">
+      <h2>We have a great philosophy and team</h2>
+      <p>
+        IT Consulting Firm (ICF) is not your typical tech company; it's a community of engineers who thrive on pushing
+        boundaries and driving innovation. With a unique entrepreneurial focus, ICF combines the best
+        of employment stability with the entrepreneurial freedom to shape one's career. Our teams are made
+        up of ambitious professionals who collaborate across disciplines, embracing both technical expertise
+        and business acumen to solve complex challenges. Together, we create an environment where
+        technology and talent converge to deliver exceptional solutions.
+      </p>
+      <a href="https://www.themembercompany.com/employeneurship">Read more</a>
+    </div>
+  </section>
+
+  <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+  <footer>
+    <div class="footer">
+      <h1>Learn more about us</h1>
+      <p>We're a global company</p>
+      <h1>Our offices</h1>
+      <p>
+        Stockholm<br>
+        Göteborg<br>
+        Västerås<br>
+        Linköping<br>
+        Skövde
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
